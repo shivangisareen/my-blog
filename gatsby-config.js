@@ -1,28 +1,19 @@
 module.exports = {
-  siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "my-blog",
-  },
-  plugins: [
-    "gatsby-plugin-image",
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: "./src/images/",
-      },
-      __key: "images",
+    siteMetadata: {
+        siteUrl: `https://www.yourdomain.tld`,
+        title: "Shivangi Sareen",
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "pages",
-        path: "./src/pages/",
-      },
-      __key: "pages",
-    },
-  ],
+    plugins: [
+        "gatsby-plugin-image",
+        "gatsby-plugin-sharp",
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: `blog`,
+                path: `${__dirname}/blog`
+            }
+        },
+        "gatsby-plugin-mdx",
+        "gatsby-transformer-sharp"
+    ],
 };
