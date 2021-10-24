@@ -1,7 +1,7 @@
 .container {
     margin: auto;
-    max-width: 500px;
-    font-family: sans-serif;
+    max-width: 700px;
+    font-family: 'Trebuchet MS';
 }
 
 .title {
@@ -14,6 +14,7 @@
 
 .navLink {
     margin-right: 20px;
+    font-size: larger;
 }
 
 .content {
