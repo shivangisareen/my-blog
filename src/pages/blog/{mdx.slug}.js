@@ -1,5 +1,5 @@
 import * as React from "react";
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
@@ -12,6 +12,7 @@ const BlogPost = ({data}) => {
     return (
         <div>
             <Layout subTitle={data.mdx.frontmatter.title}>
+            <Link to="/">{`<- Back blog list`}</Link>
                 <p>Date posted: {data.mdx.frontmatter.date}</p>
                 <GatsbyImage
                     image = {image}
