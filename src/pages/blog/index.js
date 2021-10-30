@@ -2,11 +2,15 @@ import * as React from "react";
 import { graphql, Link } from 'gatsby';
 
 import NavBar from "../../components/navBar";
+import Header from "../../components/header";
+import { content } from "./blog.module.css";
 
 const Blog = ({data}) => {
     return (
         <div>
+            <Header/>
             <NavBar subTitle="Blog page!"/> 
+            <div className={content}>
             {
                 data.allMdx.nodes.map(node => (
                     <article key={node.id}>
@@ -16,8 +20,8 @@ const Blog = ({data}) => {
                     </article>
                 ))
             }
+            </div> 
         </div>
-        
     );
 };
 
