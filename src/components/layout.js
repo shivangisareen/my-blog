@@ -4,8 +4,6 @@ import { Link, useStaticQuery, graphql } from "gatsby";
 import Header from "./header";
 import { container, title, navBar, navLink, content } from "./layout.module.css";
 
-
-
 const Layout = ({siteTitle, subTitle, children}) => {
 
     const data = useStaticQuery(graphql`
