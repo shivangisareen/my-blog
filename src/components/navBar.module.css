@@ -3,10 +3,6 @@
     font-family: 'Trebuchet MS';
 }
 
-.title {
-    color:darkslateblue;
-}
-
 .navBar {
     margin: 0px;
 }
@@ -14,8 +10,4 @@
 .navLink {
     margin-right: 20px;
     font-size: larger;
-}
-
-.content {
-    font-family:'Trebuchet MS';
 }

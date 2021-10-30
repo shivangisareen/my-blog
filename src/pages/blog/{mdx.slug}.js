@@ -10,13 +10,12 @@ import { content } from "./blog.module.css";
 
 const BlogPost = ({data}) => {
     const image = getImage(data.mdx.frontmatter.hero_image);
-    console.log(data);
     return (
         <div>
             <Header/>
             <NavBar subTitle={data.mdx.frontmatter.title} />
             <div className={content}>
-                <Link to="/blog">{`<- Back blog list`}</Link>
+                <Link to="/blog">{`<- Back to blog list`}</Link>
                 <p>Date posted: {data.mdx.frontmatter.date}</p>
                 <GatsbyImage
                     image = {image}
