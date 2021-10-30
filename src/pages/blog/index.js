@@ -1,22 +1,21 @@
 import * as React from "react";
 import { graphql, Link } from 'gatsby';
 
-import Layout from "../../components/layout";
+import NavBar from "../../components/navBar";
 
 const Blog = ({data}) => {
     return (
         <div>
-            <Layout subTitle="Blog page!"> 
-                {
-                    data.allMdx.nodes.map(node => (
-                        <article key={node.id}>
-                            <Link to={node.slug}><h2>{node.frontmatter.title}</h2></Link>
-                            <p>Posted: {node.frontmatter.date}</p>
-                            <br/>
-                        </article>
-                    ))
-                }
-            </Layout>
+            <NavBar subTitle="Blog page!"/> 
+            {
+                data.allMdx.nodes.map(node => (
+                    <article key={node.id}>
+                        <Link to={node.slug}><h2>{node.frontmatter.title}</h2></Link>
+                        <p>Posted: {node.frontmatter.date}</p>
+                        <br/>
+                    </article>
+                ))
+            }
         </div>
         
     );

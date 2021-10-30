@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import { container, title, navBar, navLink, content } from "./layout.module.css";
+import { container, title, navBar, navLink, content } from "./navBar.module.css";
 
-const Layout = ({siteTitle, subTitle, children}) => {
+const NavBar = ({subTitle}) => {
 
     return (
         <div className={container}>
@@ -15,11 +15,11 @@ const Layout = ({siteTitle, subTitle, children}) => {
               </nav>
               <h3>{subTitle}</h3>
             </div>
-            <main className={content}>
+            {/* <main className={content}>
               {children}
-            </main>
+            </main> */}
         </div>
     );
 };
 
-export default Layout;
+export default NavBar;

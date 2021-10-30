@@ -1,12 +1,12 @@
 import * as React from "react";
 import {StaticImage} from "gatsby-plugin-image";
 
-import Layout from "../components/layout";
+import NavBar from "../components/navBar";
 
 const IndexPage = () => {
     return (
       <div>
-          <Layout subTitle="Home"> Welcome to the home page of my website! </Layout>
+          <NavBar subTitle="Home"/> 
       </div>
     );
 };

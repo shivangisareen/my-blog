@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-import Layout from "../../components/layout";
+import NavBar from "../../components/navBar";
 
 
 const BlogPost = ({data}) => {
@@ -11,23 +11,22 @@ const BlogPost = ({data}) => {
     console.log(data);
     return (
         <div>
-            <Layout subTitle={data.mdx.frontmatter.title}>
+            <NavBar subTitle={data.mdx.frontmatter.title} />
             <Link to="/">{`<- Back blog list`}</Link>
-                <p>Date posted: {data.mdx.frontmatter.date}</p>
-                <GatsbyImage
-                    image = {image}
-                    alt={data.mdx.frontmatter.hero_image_alt}
-                />
-                <p>
-                    Photo credit: {" "} {/*to render space between the colon : and the credit_text*/}
-                    <a href={data.mdx.frontmatter.hero_image_credit_link}>
-                        {data.mdx.frontmatter.hero_image_credit_text}
-                    </a>
-                </p>
-                <MDXRenderer>
-                    {data.mdx.body}
-                </MDXRenderer>
-            </Layout>
+            <p>Date posted: {data.mdx.frontmatter.date}</p>
+            <GatsbyImage
+                image = {image}
+                alt={data.mdx.frontmatter.hero_image_alt}
+            />
+            <p>
+                Photo credit: {" "} {/*to render space between the colon : and the credit_text*/}
+                <a href={data.mdx.frontmatter.hero_image_credit_link}>
+                    {data.mdx.frontmatter.hero_image_credit_text}
+                </a>
+            </p>
+            <MDXRenderer>
+                {data.mdx.body}
+            </MDXRenderer>
         </div>
     )
 };
