@@ -6,9 +6,9 @@ import {header} from "./header.module.css";
 const Header = () => {
     return (
         <div>
-            <container className={header}>
+            <div className={header}>
                 <Link to="/"><h1>Shivangi Sareen</h1></Link>
-            </container>
+            </div>
         </div>
     );
 };
