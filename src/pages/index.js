@@ -1,8 +1,8 @@
 import * as React from "react";
-import {StaticImage} from "gatsby-plugin-image";
 
 import NavBar from "../components/navBar";
 import Header from "../components/header";
+import 'semantic-ui-css/semantic.min.css';
 
 const IndexPage = () => {
     return (
