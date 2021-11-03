@@ -1,8 +1,8 @@
 import * as React from "react";
+import 'semantic-ui-css/semantic.min.css';
 
 import NavBar from "../components/navBar";
 import Header from "../components/header";
-import 'semantic-ui-css/semantic.min.css';
 
 const IndexPage = () => {
     return (
