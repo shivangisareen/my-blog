@@ -9,17 +9,20 @@ const Blog = ({data}) => {
     return (
         <div>
             <Header/>
-            <NavBar subTitle="Blog page!"/> 
+            <NavBar subTitle="<change text>"/> 
+            <br/>
             <div className={content}>
-            {
-                data.allMdx.nodes.map(node => (
-                    <article key={node.id}>
-                        <Link to={node.slug}><h2>{node.frontmatter.title}</h2></Link>
-                        <p>Posted: {node.frontmatter.date}</p>
-                        <br/>
-                    </article>
-                ))
-            }
+              <div className={"ui relaxed divided list"}>
+                {
+                  data.allMdx.nodes.map(node => (
+                      <div className={"item"} key={node.id}>
+                          <Link to={node.slug}><h2>{node.frontmatter.title}</h2></Link>
+                          <div className={"description"}>Posted: {node.frontmatter.date}</div>
+                          <br/>
+                      </div>
+                  ))
+                }
+              </div>
             </div> 
         </div>
     );
@@ -31,7 +34,7 @@ export const query = graphql`
           nodes {
             frontmatter {
               title
-              date(formatString: "DD-MM-YYYY")
+              date(formatString: "DD-MMM-YYYY")
             }
             id
             slug
