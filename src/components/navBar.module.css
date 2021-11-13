@@ -10,9 +10,14 @@
 
 .navLink {
     margin-right: 20px;
-    font-size: larger;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    /* color:darkslateblue; */
+    color:deeppink;
 }
 
-.button {
-    font-family: "-apple-system, Roboto, sans-serif, serif",
+.navLink:hover {
+    color: #feab3a;
 }
+
