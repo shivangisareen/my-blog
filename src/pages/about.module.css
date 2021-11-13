@@ -1,0 +1,11 @@
+.text {
+    font-family: 'Homemade Apple', cursive !important;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    text-align: center;
+    color:sienna
+}
+
+.links {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}

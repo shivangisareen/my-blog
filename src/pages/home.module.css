@@ -10,3 +10,15 @@
     font-size: larger;
     color: orange;
 }
+
+.circularSquare {
+    border-radius: 50%;
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+    display: block;
+     margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
