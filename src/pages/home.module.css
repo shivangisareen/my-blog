@@ -1,0 +1,12 @@
+.intro {
+    font-family: 'Homemade Apple', cursive !important;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    text-align: center;
+    color:sienna
+}
+
+.softwareEngineer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    color: orange;
+}

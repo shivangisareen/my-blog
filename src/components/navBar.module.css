@@ -18,7 +18,9 @@
 }
 
 .navLink:hover {
-    color: #feab3a;
+    color: orange;
+    border-bottom: deeppink solid 2px;
+    font-weight: bold;
 }
 
 .navLink:active {

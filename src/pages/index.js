@@ -4,12 +4,15 @@ import * as React from "react";
 import NavBar from "../components/navBar";
 import Header from "../components/header";
 
+import { intro, softwareEngineer } from "./home.module.css";
+
 const IndexPage = () => {
     return (
       <div>
           <Header/>
           <NavBar/> 
-          {/* <img src={"../images/icon.png"} /> */}
+          <br/>
+          <h2 className={intro}>hi! I'm a <span className={softwareEngineer}>software engineer</span> living in the UK!</h2>
       </div>
     );
 };
