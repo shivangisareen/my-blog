@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import {header, mainTitle} from "./header.module.css";
+import {header} from "./header.module.css";
 
 const Header = () => {
     return (
@@ -9,7 +9,7 @@ const Header = () => {
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/> 
             <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet"></link>
             <div className={header}>
-                <h1 className={mainTitle}>Shivangi Sareen</h1>
+                <h1>Shivangi Sareen</h1>
                 {/* <h4 className={subTitle}>Software Engineer</h4> */}
             </div>
         </div>

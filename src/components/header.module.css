@@ -4,8 +4,9 @@
     margin-top: 10px;
     margin-left: 40px;
     text-align: center;
+    color:royalblue;
 }
 
-.mainTitle {
-    color:royalblue;
+.header:hover {
+    color: darkkhaki;
 }

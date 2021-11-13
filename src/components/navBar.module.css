@@ -21,3 +21,6 @@
     color: #feab3a;
 }
 
+.navLink:active {
+    color:cornflowerblue;
+}
