@@ -16,7 +16,7 @@ const BlogPost = ({data}) => {
             <NavBar subTitle={data.mdx.frontmatter.title} />
             <div className={content}>
                 <Link to="/blog">{`<- Back to blog list`}</Link>
-                <p className={"description"}>Date posted: {data.mdx.frontmatter.date}</p>
+                <p>Date posted: {data.mdx.frontmatter.date}</p>
                 <GatsbyImage
                     image = {image}
                     alt={data.mdx.frontmatter.hero_image_alt}

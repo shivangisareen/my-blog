@@ -5,9 +5,14 @@
 
 .navBar {
     margin: 0px;
+    text-align: center;
 }
 
 .navLink {
     margin-right: 20px;
     font-size: larger;
+}
+
+.button {
+    font-family: "-apple-system, Roboto, sans-serif, serif",
 }

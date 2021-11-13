@@ -7,7 +7,7 @@ const AboutPage = () => {
     return (
         <div>
             <Header/>
-            <NavBar subTitle="About"/>
+            <NavBar/>
         </div>
     );
 };

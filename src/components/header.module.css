@@ -1,6 +1,11 @@
 .header {
-    font-family:monospace;
-    font-size: xx-large;
+    font-family:'Homemade Apple', cursive !important;
+    font-size: x-large;
     margin-top: 10px;
     margin-left: 40px;
+    text-align: center;
+}
+
+.mainTitle {
+    color:royalblue;
 }

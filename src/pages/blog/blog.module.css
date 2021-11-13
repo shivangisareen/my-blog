@@ -1,5 +1,9 @@
 .content {
-    font-family: 'Trebuchet MS';
+    font-family: 'Lora', serif !important;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.title {
+    color:darkslategrey;
 }

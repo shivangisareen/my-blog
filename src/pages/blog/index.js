@@ -3,26 +3,24 @@ import { graphql, Link } from 'gatsby';
 
 import NavBar from "../../components/navBar";
 import Header from "../../components/header";
-import { content } from "./blog.module.css";
+import { content, title } from "./blog.module.css";
 
 const Blog = ({data}) => {
     return (
         <div>
             <Header/>
-            <NavBar subTitle="<change text>"/> 
+            <NavBar/> 
             <br/>
             <div className={content}>
-              <div className={"ui relaxed divided list"}>
                 {
                   data.allMdx.nodes.map(node => (
-                      <div className={"item"} key={node.id}>
-                          <Link to={node.slug}><h2>{node.frontmatter.title}</h2></Link>
-                          <div className={"description"}>Posted: {node.frontmatter.date}</div>
+                      <div key={node.id}>
+                          <Link to={node.slug}><h2 className={title}>{node.frontmatter.title}</h2></Link>
+                          <div>Posted: {node.frontmatter.date}</div>
                           <br/>
                       </div>
                   ))
                 }
-              </div>
             </div> 
         </div>
     );
