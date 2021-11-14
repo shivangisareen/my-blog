@@ -5,7 +5,7 @@ import NavBar from "../components/navBar";
 import Header from "../components/header";
 import me from "../images/me.jpeg";
 
-import { intro, softwareEngineer, circularSquare } from "./home.module.css";
+import { intro, softwareEngineer, circularSquare } from "./index.module.css";
 
 const IndexPage = () => {
     return (
@@ -15,7 +15,7 @@ const IndexPage = () => {
           <br/>
           <h2 className={intro}>hi! I'm a <span className={softwareEngineer}>software engineer</span> living in the UK!</h2>
           <br/>
-          <img className={circularSquare} src={me} />
+          <img className={circularSquare} src={me} alt="This is me!"/>
       </div>
     );
 };
