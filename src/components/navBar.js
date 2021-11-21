@@ -8,10 +8,10 @@ const NavBar = () => {
     return (
         <div className={container}>
             <nav className={navBar}>
-                <Link to="/" className={navLink}>home</Link> 
-                <Link to="/blog" className={navLink}>blog</Link>
-                <Link to="/about" className={navLink}>about</Link>
-                <Link to="/contact" className={navLink}>contact</Link>
+                <Link to="/" className={navLink} id="home">home</Link> 
+                <Link to="/blog" className={navLink} id="blog">blog</Link>
+                <Link to="/about" className={navLink} id="about">about</Link>
+                <Link to="/contact" className={navLink} id="contact">contact</Link>
             </nav>
         </div>
     );
