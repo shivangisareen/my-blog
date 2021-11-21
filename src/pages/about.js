@@ -7,7 +7,7 @@ import { text } from "./about.module.css";
 
 const AboutPage = () => {
     return (
-        <div>
+        <div className={"about"}>
             <Header/>
             <NavBar/>
             <br/>
@@ -15,7 +15,7 @@ const AboutPage = () => {
             <br/>
 
             <div className={text}>
-                I graduated in 2019 from trinity college dublin with a bachelors in computer engineering. blah blah
+                I graduated in 2019 from Trinity College Dublin with a bachelors in computer engineering. I'm currently working at Apple in the AI/ML team for Siri Understanding.
             </div>
 
             
