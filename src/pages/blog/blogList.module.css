@@ -1,5 +1,5 @@
-.content {
-    font-family: 'Lora', serif !important;
+.container {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -11,7 +11,6 @@
 
 .title:hover {
     color: darkorange;
-    /* color:palevioletred */
 }
 
 .list {

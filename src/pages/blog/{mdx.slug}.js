@@ -5,31 +5,38 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import NavBar from "../../components/navBar";
 import Header from "../../components/header";
-import { content } from "./blog.module.css";
+import { content, title, goBack, datePosted, text } from "./blogPost.module.css";
 
 
 const BlogPost = ({data}) => {
-    const image = getImage(data.mdx.frontmatter.hero_image);
+    // const image = getImage(data.mdx.frontmatter.hero_image);
     return (
         <div>
             <Header/>
-            <NavBar subTitle={data.mdx.frontmatter.title} />
+            <NavBar/>
+            <br/> <br/>
             <div className={content}>
-                <Link to="/blog">{`<- Back to blog list`}</Link>
-                <p>Date posted: {data.mdx.frontmatter.date}</p>
-                <GatsbyImage
+                <Link to="/blog" className={goBack}>Back to blog list</Link> 
+                <br/> <br/>
+                <div className={title}>{data.mdx.frontmatter.title}</div>
+                <div className={datePosted}>Date posted: {data.mdx.frontmatter.date}</div>
+
+                {/* <GatsbyImage
                     image = {image}
                     alt={data.mdx.frontmatter.hero_image_alt}
                 />
                 <p>
-                    Photo credit: {" "} {/*to render space between the colon : and the credit_text*/}
+                    Photo credit: {" "} 
                     <a href={data.mdx.frontmatter.hero_image_credit_link}>
                         {data.mdx.frontmatter.hero_image_credit_text}
                     </a>
-                </p>
+                </p> */}
+                <p className={text}>
                 <MDXRenderer>
                     {data.mdx.body}
-                </MDXRenderer>
+                </MDXRenderer>    
+                </p>
+                
             </div>
             
         </div>
@@ -42,14 +49,6 @@ export const query = graphql`
             frontmatter {
                 date(formatString: "DD-MM-YYYY")
                 title
-                hero_image_alt
-                hero_image_credit_link
-                hero_image_credit_text
-                hero_image {
-                    childImageSharp {
-                        gatsbyImageData
-                    }
-                }
             }
         body
         }

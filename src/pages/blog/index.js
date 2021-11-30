@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby';
 
 import NavBar from "../../components/navBar";
 import Header from "../../components/header";
-import { content, title, list } from "./blog.module.css";
+import { container, title, list } from "./blogList.module.css";
 
 const Blog = ({data}) => {
     return (
@@ -11,7 +11,7 @@ const Blog = ({data}) => {
             <Header/>
             <NavBar/> 
             <br/>
-            <div className={content}>
+            <div className={container}>
               <ul className={list}>
                 {
                   data.allMdx.nodes.map(node => (

@@ -1,0 +1,34 @@
+.content {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: large;
+}
+
+.title {
+    color:darkslategrey;
+    text-decoration: none;
+    font-size:xx-large;
+    font-weight: bolder;
+}
+
+.datePosted {
+    color:palevioletred;
+    font-weight: bold;
+}
+
+.goBack {
+    text-decoration: none;
+    color:orange;
+}
+
+.goBack:hover {
+    color: orange;
+    border-bottom: deeppink solid 2px;
+    font-weight: bold;
+}
+
+.text {
+    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}

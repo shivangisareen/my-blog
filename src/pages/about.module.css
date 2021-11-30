@@ -1,10 +1,10 @@
 .text {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     font-size: x-large;
-    color: darkolivegreen;
-    padding-left: 200px;
-    padding-right: 200px;
+    color:teal;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .specialText {
