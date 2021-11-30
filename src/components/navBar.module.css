@@ -26,3 +26,12 @@
 .navLink:active {
     color:cornflowerblue;
 }
+
+.current { 
+    margin-right: 20px;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: orange;
+    border-bottom: deeppink solid 2px;
+}

@@ -11,7 +11,7 @@ const IndexPage = () => {
     return (
       <div>
           <Header/>
-          <NavBar/> 
+          <NavBar/>
           <br/>
           <h2 className={intro}>hi! I'm a <span className={softwareEngineer}>software engineer</span> living in the UK!</h2>
           <br/>

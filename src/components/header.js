@@ -5,9 +5,6 @@ import {header} from "./header.module.css";
 const Header = () => {
     return (
         <div>
-            <link rel="preconnect" href="https://fonts.googleapis.com"/> 
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/> 
-            <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet"></link>
             <div className={header}>
                 <h1>Shivangi Sareen</h1>
                 {/* <h4 className={subTitle}>Software Engineer</h4> */}
