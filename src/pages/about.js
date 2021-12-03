@@ -21,9 +21,8 @@ const AboutPage = () => {
                 I've taught <span className={specialText}>SQL</span> and <span className={specialText}>Python</span> courses at <span className={specialText}>Code First Girls</span>, to train women in coding skills. 
                 I'm a <span className={specialText}>UN Volunteer</span> and have worked with a number of incredible organisations inlcuding <span className={specialText}>UNDP</span>, <span className={specialText}>International Telecommunication Union</span> and <span className={specialText}>Surfrider Foundation Europe</span>.
                 <br/>
-                I love creating digital illustrations, reading and writing. And I listen to podcasts all day everyday. 
+                I love creating digital illustrations, reading and writing. I listen to podcasts all day everyday. 
                 <span className={specialText}> Fun fact:</span> I am one of the <span className={specialText}>co-authors</span> of a case book exploring <span className={specialText}>social enterprises</span> in <span className={specialText}>Ireland</span> and <span className={specialText}>Vietnam</span>. 
-
             </p>
         </div>
     );
