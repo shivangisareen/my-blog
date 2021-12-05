@@ -1,7 +1,7 @@
 .container {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .title {
@@ -14,5 +14,5 @@
 }
 
 .list {
-    padding-left: 250px;
+    padding-left: 20%;
 }
