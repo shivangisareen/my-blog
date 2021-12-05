@@ -1,7 +1,6 @@
 .text {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-    font-size: x-large;
     color:teal;
 
 }
@@ -9,18 +8,23 @@
     .text {
         padding-left: 25%;
         padding-right: 25%;
+        font-size: x-large;
     }
 }
 @media (max-width: 1100px) {
     .text {
         padding-left: 20%;
         padding-right: 20%;
+        font-size: x-large;
+
     }
 }
 @media (max-width: 480px) {
     .text {
         padding-left: 2.5%;
         padding-right: 2.5%;
+        font-size: large;
+
     }
 }
 
