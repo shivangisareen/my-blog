@@ -12,7 +12,7 @@ const AboutPage = () => {
             <NavBar/>
             <br/>
             <br/>
-            <p className={text}>
+            <h2 className={text}>
                 <span className={specialText}>Hi!</span> I'm a software engineer at <span className={specialText}>Apple</span> in the <span className={specialText}>AI/ML</span> team for <span className={specialText}>Siri Understanding</span>.
                 <br/> 
                 Previously, I worked at <span className={specialText}>American Express</span>, in a range of back-end, front-end and devops roles. 
@@ -23,7 +23,7 @@ const AboutPage = () => {
                 <br/>
                 I love creating digital illustrations, reading and writing. I listen to podcasts all day everyday. 
                 <span className={specialText}> Fun fact:</span> I am one of the <span className={specialText}>co-authors</span> of a case book exploring <span className={specialText}>social enterprises</span> in <span className={specialText}>Ireland</span> and <span className={specialText}>Vietnam</span>. 
-            </p>
+            </h2>
         </div>
     );
 };
