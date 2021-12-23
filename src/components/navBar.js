@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import { container, navBar, navLink, current } from "./navBar.module.css";
+import { container, navBar, navLink, current } from "./styling/navBar.module.css";
 
 const NavBar = () => {
 

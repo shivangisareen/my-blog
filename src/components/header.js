@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import {header} from "./header.module.css";
+import {header} from "./styling/header.module.css";
 
 const Header = () => {
     return (
