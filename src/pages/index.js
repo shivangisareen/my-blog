@@ -6,7 +6,7 @@ import Header from "../components/header";
 import Layout from "../components/Layout";
 import me from "../images/me.jpeg";
 
-import { intro, softwareEngineer, circularSquare } from "./index.module.css";
+import { intro, softwareEngineer, circularSquare } from "./styling/index.module.css";
 
 const IndexPage = () => {
     return (

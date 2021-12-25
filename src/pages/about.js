@@ -4,7 +4,7 @@ import NavBar from "../components/navBar";
 import Header from "../components/header";
 import Layout from "../components/Layout";
 
-import { text, specialText } from "./about.module.css";
+import { text, specialText } from "./styling/about.module.css";
 
 const AboutPage = () => {
     return (

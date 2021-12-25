@@ -4,7 +4,7 @@ import NavBar from "../components/navBar";
 import Header from "../components/header";
 import Layout from "../components/Layout";
 
-import { text, links } from "./contact.module.css";
+import { text, links } from "./styling/contact.module.css";
 
 
 const ContactPage = () => {
