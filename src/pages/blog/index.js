@@ -3,11 +3,12 @@ import { graphql, Link } from 'gatsby';
 
 import NavBar from "../../components/navBar";
 import Header from "../../components/header";
+import Layout from "../../components/Layout";
 import { container, title, list } from "./blogList.module.css";
 
 const Blog = ({data}) => {
     return (
-        <div>
+        <Layout>
             <Header/>
             <NavBar/> 
             <br/>
@@ -25,7 +26,7 @@ const Blog = ({data}) => {
                 }
                 </ul>
             </div> 
-        </div>
+        </Layout>
     );
 };
 

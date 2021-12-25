@@ -2,12 +2,13 @@ import * as React from "react";
 
 import NavBar from "../components/navBar";
 import Header from "../components/header";
+import Layout from "../components/Layout";
 
 import { text, specialText } from "./about.module.css";
 
 const AboutPage = () => {
     return (
-        <div>
+        <Layout>
             <Header/>
             <NavBar/>
             <br/>
@@ -24,7 +25,7 @@ const AboutPage = () => {
                 I love creating digital illustrations, reading and writing. I listen to podcasts all day everyday. 
                 <span className={specialText}> Fun fact:</span> I am one of the <span className={specialText}>co-authors</span> of a case book exploring <span className={specialText}>social enterprises</span> in <span className={specialText}>Ireland</span> and <span className={specialText}>Vietnam</span>. 
             </h2>
-        </div>
+        </Layout>
     );
 };
 

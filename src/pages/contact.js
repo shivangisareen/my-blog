@@ -2,13 +2,14 @@ import * as React from "react";
 
 import NavBar from "../components/navBar";
 import Header from "../components/header";
+import Layout from "../components/Layout";
 
 import { text, links } from "./contact.module.css";
 
 
 const ContactPage = () => {
     return (
-        <div>
+        <Layout>
             <Header/>
             <NavBar/>
             <br/>
@@ -19,7 +20,7 @@ const ContactPage = () => {
                 <a href="https://medium.com/@shivangisareen" target="_blank">medium</a> {"\t"}
                 <a href="https://shivangisareen.portfoliobox.net" target="_blank">portfolio</a>
             </div>
-        </div>
+        </Layout>
     );
 };
 

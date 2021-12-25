@@ -4,12 +4,13 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 import NavBar from "../../components/navBar";
 import Header from "../../components/header";
+import Layout from "../../components/Layout";
 import { content, title, goBack, datePosted, text } from "./blogPost.module.css";
 
 
 const BlogPost = ({data}) => {
     return (
-        <div>
+        <Layout>
             <Header/>
             <NavBar/>
             <br/> <br/>
@@ -26,7 +27,7 @@ const BlogPost = ({data}) => {
                 
             </div>
             
-        </div>
+        </Layout>
     )
 };
 
