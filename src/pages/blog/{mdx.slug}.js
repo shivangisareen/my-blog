@@ -5,7 +5,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import NavBar from "../../components/navBar";
 import Header from "../../components/header";
 import Layout from "../../components/Layout";
-import { content, title, goBack, datePosted, text } from "./blogPost.module.css";
+import { content, title, goBack, datePosted, text } from "./styling/blogPost.module.css";
 
 
 const BlogPost = ({data}) => {

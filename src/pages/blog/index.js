@@ -4,7 +4,7 @@ import { graphql, Link } from 'gatsby';
 import NavBar from "../../components/navBar";
 import Header from "../../components/header";
 import Layout from "../../components/Layout";
-import { container, title, list } from "./blogList.module.css";
+import { container, title, list } from "./styling/blogList.module.css";
 
 const Blog = ({data}) => {
     return (
