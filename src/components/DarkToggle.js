@@ -3,7 +3,6 @@ import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import Button from '@mui/material/Button';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import { hslToRgb } from '@mui/system';
 
 const DarkToggle = () => {
 
