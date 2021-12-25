@@ -2,8 +2,6 @@ import React from "react";
 import DarkToggle from "./darkToggle";
 import "../components/styling/global.css";
 
-import { iconLayout } from "../components/styling/layout.module.css";
-
 const Layout = ({children}) => {
       return (
         <div
@@ -12,7 +10,7 @@ const Layout = ({children}) => {
             transition: 'color ease-out, background ease-out',
           }}
         >
-          <DarkToggle/>
+          <DarkToggle />
           {children}
             
         </div>
