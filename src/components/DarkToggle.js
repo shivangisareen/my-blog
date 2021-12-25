@@ -12,7 +12,7 @@ const DarkToggle = () => {
           <div>
           <Button 
             onClick={e => theme === 'light' ? toggleTheme('dark') : toggleTheme('light')}>
-            {theme === 'light' ? <DarkModeIcon/> : <WbSunnyIcon/> }
+            {theme === 'light' ? <DarkModeIcon fontSize="large" /> : <WbSunnyIcon fontSize="large" /> }
           </Button>
           </div>
         )}
