@@ -1,7 +1,8 @@
 .intro {
     font-family: 'Homemade Apple', cursive !important;
+    /* font-family: 'Courier New', Courier, monospace; */
     text-align: center;
-    color:sienna
+    font-size: 1.8em;
 }
 
 .softwareEngineer {
@@ -14,10 +15,10 @@
     border-radius: 50%;
     height: auto; 
     width: auto; 
-    max-width: 300px; 
-    max-height: 300px;
+    max-width: 350px; 
+    max-height: 350px;
     display: block;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     width: 50%;
   }

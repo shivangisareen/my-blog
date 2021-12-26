@@ -1,13 +1,13 @@
 .text {
     font-family: 'Homemade Apple', cursive !important;
     text-align: center;
-    color:sienna
+    font-size: 2em;
 }
 
 .links {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-    font-size: x-large;
+    font-size: 1.8em;
 }
 
 .links a {

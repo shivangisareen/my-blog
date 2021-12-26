@@ -14,7 +14,7 @@ const IndexPage = () => {
           <Header/>
           <NavBar/>
           <br/>
-          <h2 className={intro}>hi! I'm a <span className={softwareEngineer}>software engineer</span> living in the UK!</h2>
+          <p className={intro}>hi! I'm a <span className={softwareEngineer}>software engineer</span> living in the UK!</p>
           <br/>
           <img className={circularSquare} src={me} alt="This is me!"/>
       </Layout>

@@ -8,6 +8,6 @@ body {
 body.dark {
   -webkit-font-smoothing: antialiased;
 
-  --bg: hsl(250deg, 70%, 7%);
+  --bg:#1e1e1d;
 
 }

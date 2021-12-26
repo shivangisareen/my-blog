@@ -15,7 +15,7 @@ const BlogPost = ({data}) => {
             <NavBar/>
             <br/> <br/>
             <div className={content}>
-                <Link to="/blog" className={goBack}>Back to blog list</Link> 
+                <Link to="/blog" className={goBack}>&#x2190; back </Link> 
                 <br/> <br/>
                 <div className={title}>{data.mdx.frontmatter.title}</div>
                 <div className={datePosted}>Date posted: {data.mdx.frontmatter.date}</div>
