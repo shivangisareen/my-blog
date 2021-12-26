@@ -10,11 +10,6 @@
     font-size: 1.2em;
 }
 
-.title.dark {
-    color: white;
-    text-decoration: none;
-}
-
 .title:hover {
     color: darkorange;
 }
