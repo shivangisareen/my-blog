@@ -21,3 +21,15 @@
     margin-right: auto;
     width: 50%;
   }
+
+@media (max-width: 480px) {
+    .intro {
+        font-size: 1.3em;;
+    }
+
+    .circularSquare {
+        max-width: 450px; 
+        max-height: 450px;
+    }
+    
+}

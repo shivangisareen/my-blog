@@ -24,3 +24,13 @@
     color:seagreen;
     border-bottom: slateblue solid 2px;
 }
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 1.3em;
+    }
+
+    .links {
+        font-size: 1.5em;
+    }
+}

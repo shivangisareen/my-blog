@@ -34,3 +34,14 @@
     border-bottom: deeppink solid 2px;
 }
 
+@media (max-width: 480px) {
+    .navLink {
+        font-size: 1.5em;
+        margin-right: 0.5em;
+    }
+
+    .current {
+        font-size: 1.5em;
+        margin-right: 0.5em;
+    }
+}

@@ -32,3 +32,11 @@
 .text {
     font-family: 'Courier New', Courier, monospace;
 }
+
+@media (max-width: 480px) {
+    .content {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 1.1em;
+    }
+}
