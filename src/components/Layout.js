@@ -1,5 +1,5 @@
 import React from "react";
-import DarkToggle from "./darkToggle";
+import DarkToggle from "./DarkToggle";
 import "./styling/global.css";
 
 const Layout = ({children}) => {
