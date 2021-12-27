@@ -14,7 +14,7 @@ const AboutPage = () => {
             <br/>
             <br/>
             <p className={text}>
-                Hi! I'm a software engineer at Apple in the AI/ML team for Siri Understanding.
+                Hello! I'm a software engineer at Apple in the AI/ML team for Siri Understanding.
                 <br/> <br/>
                 Previously, I worked at American Express, in a range of back-end, front-end and devops roles. 
                 I graduated in 2019 from Trinity College Dublin with a bachelors in computer engineering. 
