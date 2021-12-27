@@ -1,8 +1,8 @@
 import * as React from "react";
 import { graphql, Link } from 'gatsby';
 
-import NavBar from "../../components/navBar";
-import Header from "../../components/header";
+import NavBar from "../../components/NavBar";
+import Header from "../../components/Header";
 import Layout from "../../components/Layout";
 import { container, title, list } from "./styling/blogList.module.css";
 import "../../components/styling/global.css"

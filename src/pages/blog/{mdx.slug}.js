@@ -3,8 +3,8 @@ import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from "@mdx-js/react"
 
-import NavBar from "../../components/navBar";
-import Header from "../../components/header";
+import NavBar from "../../components/NavBar";
+import Header from "../../components/Header";
 import Layout from "../../components/Layout";
 import { content, title, goBack, datePosted, text } from "./styling/blogPost.module.css";
 import "../../components/styling/global.css"
