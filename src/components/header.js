@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div>
             <div>
-                <Link to="/" className={header}> <h1> Shivangi Sareen </h1> </Link>
+                <Link to="/" className={header}> Shivangi Sareen </Link>
             </div>
         </div>
     );
