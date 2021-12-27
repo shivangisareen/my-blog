@@ -1,13 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
 
 .header {
-    font-family:'Homemade Apple', cursive !important;
-    font-size: 1.6em;
-    text-align: center;
+    font-family: 'Homemade Apple', cursive !important;
     color:royalblue;
     text-decoration: none;
+    font-size: 3em;
 }
 
-.header:hover {
-    color: orange;
-}

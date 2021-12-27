@@ -1,15 +1,13 @@
 .container {
-    margin-left: 30px;
     font-family: 'Trebuchet MS';
 }
 
 .navBar {
-    margin: 0px;
     text-align: center;
 }
 
 .navLink {
-    margin-right: 20px;
+    margin-right: 0.8em;
     font-size: 2em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
@@ -28,7 +26,7 @@
 }
 
 .current { 
-    margin-right: 20px;
+    margin-right: 0.8em;
     font-size: 2em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;

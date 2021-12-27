@@ -5,10 +5,8 @@ import {header} from "./styling/header.module.css";
 
 const Header = () => {
     return (
-        <div>
-            <div>
-                <Link to="/" className={header}> Shivangi Sareen </Link>
-            </div>
+        <div style={{textAlign:"center"}}>
+            <Link to="/" className={header}> Shivangi Sareen </Link>
         </div>
     );
 };
