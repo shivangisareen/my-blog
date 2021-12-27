@@ -12,15 +12,16 @@ const Blog = ({data}) => {
             <Header/>
             <NavBar/> 
             <br/>
+            <br/>
             <div className={container}>
               <ul className={list}>
                 {
                   data.allMdx.nodes.map(node => (
                       <div key={node.id}>
                         <li>
-                          <Link to={node.slug} className={title}><h2>{node.frontmatter.title}</h2></Link>
-                          {/* <div>Posted: {node.frontmatter.date}</div> */}
+                          <Link to={node.slug} className={title}>{node.frontmatter.title}</Link>
                         </li>
+                        <br/>
                       </div>
                   ))
                 }
