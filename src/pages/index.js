@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import me from "../images/me.jpeg";
 
 import { intro, softwareEngineer, circularSquare } from "./styling/index.module.css";
+import "../components/styling/global.css";
 
 const IndexPage = () => {
     return (
@@ -14,7 +15,7 @@ const IndexPage = () => {
           <Header/>
           <NavBar/>
           <br/>
-          <p className={intro}>hi! I'm a <span className={softwareEngineer}>software engineer</span> living in the UK!</p>
+          <p className={intro} style={{color: 'var(--textNormal)',}}>hi! I'm a <span className={softwareEngineer}>software engineer</span> living in the UK!</p>
           <br/>
           <img className={circularSquare} src={me} alt="This is me!"/>
       </Layout>

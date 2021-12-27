@@ -6,6 +6,7 @@ import NavBar from "../../components/navBar";
 import Header from "../../components/header";
 import Layout from "../../components/Layout";
 import { content, title, goBack, datePosted, text } from "./styling/blogPost.module.css";
+import "../../components/styling/global.css"
 
 
 const BlogPost = ({data}) => {
@@ -19,7 +20,7 @@ const BlogPost = ({data}) => {
                 <br/> <br/>
                 <div className={title}>{data.mdx.frontmatter.title}</div>
                 <div className={datePosted}>Date posted: {data.mdx.frontmatter.date}</div>
-                <p className={text}>
+                <p className={text} style={{color: 'var(--textNormal)',}}>
                 <MDXRenderer>
                     {data.mdx.body}
                 </MDXRenderer>    

@@ -5,6 +5,7 @@ import NavBar from "../../components/navBar";
 import Header from "../../components/header";
 import Layout from "../../components/Layout";
 import { container, title, list } from "./styling/blogList.module.css";
+import "../../components/styling/global.css"
 
 const Blog = ({data}) => {
     return (
@@ -19,7 +20,12 @@ const Blog = ({data}) => {
                   data.allMdx.nodes.map(node => (
                       <div key={node.id}>
                         <li>
-                          <Link to={node.slug} className={title}>{node.frontmatter.title}</Link>
+                          <Link to={node.slug} 
+                                className={title} 
+                                style={{color: 'var(--textNormal)',}}>
+
+                                {node.frontmatter.title}
+                          </Link>
                         </li>
                         <br/>
                       </div>

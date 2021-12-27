@@ -1,7 +1,8 @@
 
 body {
     --bg: white;
-  
+    --textNormal: black;
+
     background-color: var(--bg);
   }
   
@@ -9,5 +10,7 @@ body.dark {
   -webkit-font-smoothing: antialiased;
 
   --bg:#1e1e1d;
+  --textNormal: white;
+
 
 }

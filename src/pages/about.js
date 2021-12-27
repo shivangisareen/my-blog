@@ -5,6 +5,7 @@ import Header from "../components/header";
 import Layout from "../components/Layout";
 
 import { text } from "./styling/about.module.css";
+import "../components/styling/global.css"
 
 const AboutPage = () => {
     return (
@@ -13,7 +14,7 @@ const AboutPage = () => {
             <NavBar/>
             <br/>
             <br/>
-            <p className={text}>
+            <p className={text} style={{color: 'var(--textNormal)',}}>
                 Hello! I'm a software engineer at Apple in the AI/ML team for Siri Understanding.
                 <br/> <br/>
                 Previously, I worked at American Express, in a range of back-end, front-end and devops roles. 
