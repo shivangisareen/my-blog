@@ -19,11 +19,11 @@ const Blog = ({data}) => {
                 {
                   data.allMdx.nodes.map(node => (
                       <div key={node.id}>
-                        <li>
+                        <li style={{content: "•", color: 'var(--textNormal)'}}>
                           <Link to={node.slug} 
                                 className={title} 
-                                style={{color: 'var(--textNormal)',}}>
-
+                                style={{color: 'var(--textNormal)',}}
+                          >
                                 {node.frontmatter.title}
                           </Link>
                         </li>

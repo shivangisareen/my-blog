@@ -2,6 +2,7 @@
 body {
     --bg: white;
     --textNormal: black;
+    --textSubHeading: silver;
 
     background-color: var(--bg);
   }
@@ -11,6 +12,8 @@ body.dark {
 
   --bg:#1e1e1d;
   --textNormal: white;
+  --textSubHeading: grey;
+
 
 
 }

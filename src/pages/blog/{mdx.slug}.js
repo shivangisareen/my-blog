@@ -18,8 +18,9 @@ const BlogPost = ({data}) => {
             <div className={content}>
                 <Link to="/blog" className={goBack}>&#x2190; back </Link> 
                 <br/> <br/>
-                <div className={title}>{data.mdx.frontmatter.title}</div>
-                <div className={datePosted}>Date posted: {data.mdx.frontmatter.date}</div>
+                <div className={title} style={{color: 'var(--textNormal)'}}>{data.mdx.frontmatter.title}</div>
+                <div className={datePosted} style={{color: 'var(--textSubHeading)'}}>Date posted: {data.mdx.frontmatter.date}</div>
+                <br/>
                 <p className={text} style={{color: 'var(--textNormal)',}}>
                 <MDXRenderer>
                     {data.mdx.body}

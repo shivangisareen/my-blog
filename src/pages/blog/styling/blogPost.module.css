@@ -6,7 +6,6 @@
 }
 
 .title {
-    color:darkslategrey;
     text-decoration: none;
     font-size:1.5em;
     font-weight: bolder;
@@ -14,8 +13,8 @@
 
 .datePosted {
     font-size:1em;
-    color:palevioletred;
     font-weight:lighter;
+    color: silver;
 }
 
 .goBack {
