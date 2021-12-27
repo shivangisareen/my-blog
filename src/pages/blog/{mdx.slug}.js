@@ -1,6 +1,7 @@
 import * as React from "react";
 import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { MDXProvider } from "@mdx-js/react"
 
 import NavBar from "../../components/navBar";
 import Header from "../../components/header";
@@ -22,9 +23,16 @@ const BlogPost = ({data}) => {
                 <div className={datePosted} style={{color: 'var(--textSubHeading)'}}>Date posted: {data.mdx.frontmatter.date}</div>
                 <br/>
                 <p className={text} style={{color: 'var(--textNormal)',}}>
-                <MDXRenderer>
-                    {data.mdx.body}
-                </MDXRenderer>    
+                <MDXProvider
+                    components={{
+                        a: (props) => <a {...props} style={{color: 'orange'}} />
+                      }} 
+                >
+                    <MDXRenderer>
+                        {data.mdx.body}
+                    </MDXRenderer>
+                    
+                </MDXProvider>    
                 </p>
                 
             </div>
