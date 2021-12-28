@@ -13,7 +13,7 @@
 
 .links a {
     text-decoration: none;
-    color:purple
+    color:seagreen;
 }
 
 .links a:nth-child(even) {
@@ -21,7 +21,7 @@
 }
 
 .links a:hover{
-    color:seagreen;
+    color:orange;
     border-bottom: slateblue solid 2px;
 }
 
