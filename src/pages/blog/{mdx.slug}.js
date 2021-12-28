@@ -23,18 +23,19 @@ const BlogPost = ({data}) => {
                 <div className={datePosted} style={{color: 'var(--textSubHeading)'}}>Date posted: {data.mdx.frontmatter.date}</div>
                 <br/>
                 <p className={text} style={{color: 'var(--textNormal)',}}>
+                <hr style={{border: 0, borderTop:'1px solid', color: 'var(--textSubHeading'}}/>
                 <MDXProvider
                     components={{
-                        a: (props) => <a {...props} style={{color: 'orange'}} />
+                        a: (props) => <a {...props} style={{color: 'orange'}} />,
+                        code: (props) => <code {...props} style={{backgroundColor:'#F5F5F5', width:'100%', display:'block', padding:'2%'}}/>,
                       }} 
                 >
                     <MDXRenderer>
                         {data.mdx.body}
                     </MDXRenderer>
-                    
-                </MDXProvider>    
+                </MDXProvider>   
+                <hr style={{border: 0, borderTop:'1px solid', color: 'var(--textSubHeading'}}/>
                 </p>
-                
             </div>
             
         </Layout>
