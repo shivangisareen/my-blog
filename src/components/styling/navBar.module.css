@@ -7,7 +7,7 @@
 }
 
 .navLink {
-    margin-right: 0.8em;
+    margin-right: 0.5em;
     font-size: 2em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
@@ -25,7 +25,7 @@
 }
 
 .current { 
-    margin-right: 0.8em;
+    margin-right: 0.5em;
     font-size: 2em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
