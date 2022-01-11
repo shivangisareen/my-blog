@@ -3,7 +3,7 @@
 body {
     --bg: white;
     --textNormal: black;
-    --textLight: silver;
+    --textLight: darkslategrey;
 
     background-color: var(--bg);
   }
