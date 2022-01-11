@@ -21,9 +21,9 @@ const AboutPage = () => {
                 I graduated in 2019 from Trinity College Dublin with a bachelors in computer engineering. 
                 <br/> <br/>
                 I've taught SQL and Python courses at Code First Girls, to train women in coding skills. 
-                I'm a UN Volunteer and have worked with a number of incredible organisations including UNDP, International Telecommunication Union and Surfrider Foundation Europe.
+                I'm a UN Volunteer and have worked with a number of incredible organisations including UNDP, International Telecommunication Union (ITU) and Surfrider Foundation Europe.
                 <br/> <br/>
-                I love creating digital illustrations, reading and writing. I listen to podcasts all day everyday.  
+                I love creating digital illustrations, reading and writing and listening to podcasts.  
                 <br/> <br/>
                 Fun fact: I am one of the co-authors of a case book exploring social enterprises in Ireland and Vietnam. 
             </p>
