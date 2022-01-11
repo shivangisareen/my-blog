@@ -2,6 +2,7 @@ import * as React from "react";
 import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from "@mdx-js/react"
+import Button from '@mui/material/Button';
 
 import NavBar from "../../components/navBar";
 import Header from "../../components/header";
@@ -20,8 +21,8 @@ const BlogPost = ({data}) => {
                 <Link to="/blog" className={goBack}>&#x2190; back </Link> 
                 <br/> <br/>
                 <div className={title} style={{color: 'var(--textNormal)'}}>{data.mdx.frontmatter.title}</div>
-                <div className={datePosted} style={{color: 'var(--textLight)'}}>Date posted: {data.mdx.frontmatter.date}</div>
                 <br/>
+                <div className={datePosted} style={{color: 'var(--textLight)'}}>Posted: {data.mdx.frontmatter.date}</div>
                 <p className={text} style={{color: 'var(--textNormal)',}}>
                 <hr style={{border: 0, borderTop:'1px solid', color: 'var(--textLight'}}/>
                 <MDXProvider
