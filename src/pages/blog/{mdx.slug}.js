@@ -9,14 +9,18 @@ import Layout from "../../components/Layout";
 import { content, title, goBack, date, text } from "./styling/blogPost.module.css";
 import "../../components/styling/global.css"
 
+import Stack from '@mui/material/Stack';
+
 
 const BlogPost = ({data}) => {
 
     const getDivIfDataExists = () => {
         if(data.mdx.frontmatter.updated) {
             return(
-                <div className={date} style={{color: 'var(--textLight)'}}>Updated: {data.mdx.frontmatter.updated}
-                </div>
+                <Stack direction="row" spacing={1} style={{color: 'var(--textLight)'}}>
+                    <div>Updated: </div> 
+                    <div className={date}>{data.mdx.frontmatter.updated}</div>
+                </Stack>
             )
         }
     }
@@ -32,8 +36,15 @@ const BlogPost = ({data}) => {
                 <br/> <br/>
                 <div className={title} style={{color: 'var(--textNormal)'}}>{data.mdx.frontmatter.title}</div>
                 <br/>
-                <div className={date} style={{color: 'var(--textLight)'}}>Posted: {data.mdx.frontmatter.date}</div>
-                {getDivIfDataExists()}
+
+                <Stack direction="row" spacing={2}>
+                    <Stack direction="row" spacing={1} style={{color: 'var(--textLight)'}}>
+                        <div>Posted:</div> 
+                        <div className={date}>{data.mdx.frontmatter.date}</div>
+                    </Stack>
+                    {getDivIfDataExists()}
+                </Stack>
+                
                 <p className={text} style={{color: 'var(--textNormal)',}}>
                     <hr style={{border: 0, borderTop:'1px solid', color: 'var(--textLight'}}/>
                     <MDXProvider
