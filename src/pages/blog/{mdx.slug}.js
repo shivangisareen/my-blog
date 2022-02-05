@@ -6,11 +6,22 @@ import { MDXProvider } from "@mdx-js/react"
 import NavBar from "../../components/navBar";
 import Header from "../../components/header";
 import Layout from "../../components/Layout";
-import { content, title, goBack, datePosted, text } from "./styling/blogPost.module.css";
+import { content, title, goBack, date, text } from "./styling/blogPost.module.css";
 import "../../components/styling/global.css"
 
 
 const BlogPost = ({data}) => {
+
+    const getDivIfDataExists = () => {
+        if(data.mdx.frontmatter.updated) {
+            return(
+                <div className={date} style={{color: 'var(--textLight)'}}>Updated: {data.mdx.frontmatter.updated}
+                </div>
+            )
+        }
+    }
+
+    
     return (
         <Layout>
             <Header/>
@@ -21,7 +32,8 @@ const BlogPost = ({data}) => {
                 <br/> <br/>
                 <div className={title} style={{color: 'var(--textNormal)'}}>{data.mdx.frontmatter.title}</div>
                 <br/>
-                <div className={datePosted} style={{color: 'var(--textLight)'}}>Posted: {data.mdx.frontmatter.date}</div>
+                <div className={date} style={{color: 'var(--textLight)'}}>Posted: {data.mdx.frontmatter.date}</div>
+                {getDivIfDataExists()}
                 <p className={text} style={{color: 'var(--textNormal)',}}>
                     <hr style={{border: 0, borderTop:'1px solid', color: 'var(--textLight'}}/>
                     <MDXProvider
@@ -48,6 +60,7 @@ export const query = graphql`
             frontmatter {
                 date(formatString: "DD-MM-YYYY")
                 title
+                updated(formatString: "DD-MM-YYYY")
             }
         body
         }
