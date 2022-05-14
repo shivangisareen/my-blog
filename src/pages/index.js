@@ -10,16 +10,16 @@ import { intro, softwareEngineer, circularSquare } from "./styling/index.module.
 import "../components/styling/global.css";
 
 const IndexPage = () => {
-    return (
-      <Layout>
-          <Header/>
-          <NavBar/>
-          <br/>
-          <p className={intro} style={{color: 'var(--textNormal)',}}>hi! I'm a <span className={softwareEngineer}>software engineer</span> living in the UK!</p>
-          <br/>
-          <img className={circularSquare} src={me} alt="This is me!"/>
-      </Layout>
-    );
+  return (
+    <Layout>
+      <Header />
+      <NavBar />
+      <br />
+      <p className={intro} style={{ color: 'var(--textNormal)', }}>hi! I'm a <span className={softwareEngineer}>software engineer</span> living in the UK!</p>
+      <br />
+      <img className={circularSquare} src={me} alt="This is me!" />
+    </Layout>
+  );
 };
 
 export default IndexPage;

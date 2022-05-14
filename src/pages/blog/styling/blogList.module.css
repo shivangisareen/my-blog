@@ -1,26 +1,28 @@
-
 .container {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-left: 2%;
-    padding-right: 2%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-left: 20%;
+  padding-right: 20%;
+  display: flexbox;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .title {
-    text-decoration: none;
-    font-size: 1.7em;
-    font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
+  font-size: 1.7em;
 }
 
 .title:hover {
-    color: darkorange;
+  color: darkorange;
 }
 
 .list {
-    padding-left: 20%;
+  padding-left: 20%;
 }
 
 @media (max-width: 480px) {
-    .title {
-        font-size: 1.3em;
-    }
+  .title {
+    font-size: 1.3em;
+  }
 }
