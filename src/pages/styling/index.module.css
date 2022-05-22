@@ -1,35 +1,33 @@
 .intro {
-    font-family: 'Homemade Apple', cursive !important;
-    text-align: center;
-    font-size: 1.8em;
+  font-family: "Homemade Apple", cursive;
+  text-align: center;
+  font-size: 1.8em;
 }
 
 .softwareEngineer {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.2em;
-    color: orange;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2em;
+  color: orange;
 }
 
 .circularSquare {
-    border-radius: 50%;
-    height: auto; 
-    width: auto; 
-    max-width: 350px; 
-    max-height: 350px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+  border-radius: 50%;
+  height: auto;
+  width: auto;
+  max-width: 350px;
+  max-height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 @media (max-width: 480px) {
-    .intro {
-        font-size: 1.3em;;
-    }
+  .intro {
+    font-size: 1.3em;
+  }
 
-    .circularSquare {
-        width: 70%;
-
-    }
-    
+  .circularSquare {
+    width: 70%;
+  }
 }

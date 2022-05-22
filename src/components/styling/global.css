@@ -1,20 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
 
 body {
-    --bg: white;
-    --textNormal: black;
-    --textLight: darkslategrey;
+  --bg: white;
+  --textNormal: black;
+  --textLight: darkslategrey;
 
-    background-color: var(--bg);
-  }
-  
+  background-color: var(--bg);
+}
+
 body.dark {
   -webkit-font-smoothing: antialiased;
 
-  --bg:#1e1e1d;
+  --bg: #1e1e1d;
   --textNormal: white;
   --textLight: grey;
-
-
-
 }

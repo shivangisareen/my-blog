@@ -1,46 +1,46 @@
 .container {
-    font-family: 'Trebuchet MS';
+  font-family: "Trebuchet MS";
 }
 
 .navBar {
-    text-align: center;
+  text-align: center;
 }
 
 .navLink {
-    margin-right: 0.5em;
-    font-size: 2em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: none;
-    /* color:darkslateblue; */
-    color:deeppink;
+  margin-right: 0.5em;
+  font-size: 2em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
+  /* color:darkslateblue; */
+  color: deeppink;
 }
 
 .navLink:hover {
-    color: orange;
-    border-bottom: deeppink solid 2px;
+  color: orange;
+  border-bottom: deeppink solid 2px;
 }
 
 .navLink:active {
-    color:cornflowerblue;
+  color: cornflowerblue;
 }
 
-.current { 
-    margin-right: 0.5em;
-    font-size: 2em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: none;
-    color: orange;
-    border-bottom: deeppink solid 2px;
+.current {
+  margin-right: 0.5em;
+  font-size: 2em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
+  color: orange;
+  border-bottom: deeppink solid 2px;
 }
 
 @media (max-width: 480px) {
-    .navLink {
-        font-size: 1.5em;
-        margin-right: 0.5em;
-    }
+  .navLink {
+    font-size: 1.5em;
+    margin-right: 0.5em;
+  }
 
-    .current {
-        font-size: 1.5em;
-        margin-right: 0.5em;
-    }
+  .current {
+    font-size: 1.5em;
+    margin-right: 0.5em;
+  }
 }

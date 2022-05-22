@@ -1,36 +1,36 @@
 .text {
-    font-family: 'Homemade Apple', cursive !important;
-    text-align: center;
-    font-size: 2em;
+  font-family: "Homemade Apple", cursive;
+  text-align: center;
+  font-size: 2em;
 }
 
 .links {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    font-size: 1.8em;
-    margin-right: 0.5em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  font-size: 1.8em;
+  margin-right: 0.5em;
 }
 
 .links a {
-    text-decoration: none;
-    color:seagreen;
+  text-decoration: none;
+  color: seagreen;
 }
 
 .links a:nth-child(even) {
-    color:mediumorchid;
+  color: mediumorchid;
 }
 
-.links a:hover{
-    color:orange;
-    border-bottom: slateblue solid 2px;
+.links a:hover {
+  color: orange;
+  border-bottom: slateblue solid 2px;
 }
 
 @media (max-width: 480px) {
-    .text {
-        font-size: 1.3em;
-    }
+  .text {
+    font-size: 1.3em;
+  }
 
-    .links {
-        font-size: 1.5em;
-    }
+  .links {
+    font-size: 1.5em;
+  }
 }
