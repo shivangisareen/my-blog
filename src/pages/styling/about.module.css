@@ -1,27 +1,25 @@
 .text {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: justify;
-    font-size: 1.7em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: justify;
+  font-size: 1.7em;
 }
 @media (min-width: 1101px) {
-    .text {
-        padding-left: 25%;
-        padding-right: 25%;
-    }
+  .text {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
 }
 @media (max-width: 1100px) {
-    .text {
-        padding-left: 20%;
-        padding-right: 20%;
-
-    }
+  .text {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
 @media (max-width: 480px) {
-    .text {
-        padding-left: 2.5%;
-        padding-right: 2.5%;
-        font-size: 1.3em;
-        text-align: flex;
-    }
+  .text {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    font-size: 1.3em;
+    text-align: flex;
+  }
 }
-
