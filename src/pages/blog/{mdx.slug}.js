@@ -18,7 +18,7 @@ import "../../components/styling/global.css";
 import Stack from "@mui/material/Stack";
 
 const BlogPost = ({ data }) => {
-  // if there is an "updated" field in the blog, creatr a div with that data
+  // if there is an "updated" field in the blog, create a div with that data
   const getDivIfDataExists = () => {
     if (data.mdx.frontmatter.updated) {
       return (
