@@ -1,0 +1,9 @@
+@import "./global.css";
+
+.cardTitle {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.card:hover {
+  background-color: var(--blogCardBackgroundHover);
+}

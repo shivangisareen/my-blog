@@ -1,21 +1,50 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
-import CardContent from '@mui/material/CardContent';
+import * as React from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
 
+import { cardTitle, card } from "./styling/blogCard.module.css";
+import "../components/styling/global.css";
 
-const BlogCard = ({ title, datePosted, summary }) => {
-    return (
-        <Card sx={{ maxWidth: 345, padding: 2, backgroundColor: "#CDD7D6", margin: 2 }}>
-            <CardHeader
-                title={title}
-                subheader={datePosted}
-            />
-            <CardContent>
-                {summary}
-            </CardContent>
-        </Card>
-    )
-}
+const BlogCard = ({ title, date, summary }) => {
+  return (
+    <Card
+      sx={{
+        backgroundColor: "var(--blogCardBackground)",
+        height: "auto",
+        // "@media screen and (max-width: 610px)": {
+        //   height: 220,
+        // },
+      }}
+      className={card}
+    >
+      <CardContent>
+        <Typography
+          variant="button"
+          color="var(--textLight)"
+          fontStyle="oblique"
+        >
+          {date}
+        </Typography>
+        <Typography
+          variant="h5"
+          align="center"
+          className={cardTitle}
+          color="var(--textNormal)"
+        >
+          {title}
+        </Typography>
+        <br />
+        <Typography
+          variant="overline"
+          color="text.secondary"
+          color="var(--textNormal)"
+        >
+          {summary}
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+};
 
 export default BlogCard;
