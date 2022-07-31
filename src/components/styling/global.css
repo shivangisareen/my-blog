@@ -4,6 +4,8 @@ body {
   --bg: white;
   --textNormal: black;
   --textLight: darkslategrey;
+  --blogCardBackground: #f5e4d7;
+  --blogCardBackgroundHover: #daa49a;
 
   background-color: var(--bg);
 }
@@ -14,4 +16,6 @@ body.dark {
   --bg: #1e1e1d;
   --textNormal: white;
   --textLight: grey;
+  --blogCardBackground: #714955;
+  --blogCardBackgroundHover: #550c18;
 }
