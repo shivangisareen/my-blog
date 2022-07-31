@@ -20,8 +20,8 @@ const Blog = ({ data }) => {
             <Grid item xs={12} sm={6} md={6} xl={4}>
               <Link
                 to={node.slug}
-                className={title}
                 style={{ color: "var(--textNormal)" }}
+                className={title}
               >
                 <BlogCard
                   title={node.frontmatter.title}

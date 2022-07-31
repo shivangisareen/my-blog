@@ -1,9 +1,15 @@
 @import "./global.css";
 
 .cardTitle {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif !important;
 }
 
 .card:hover {
   background-color: var(--blogCardBackgroundHover);
+}
+
+@media (max-width: 480px) {
+  .cardTitle {
+    font-size: 1.3em;
+  }
 }

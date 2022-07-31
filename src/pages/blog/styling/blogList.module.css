@@ -1,5 +1,4 @@
 .container {
-  font-family: Cambria !important;
   padding-top: 5%;
   padding-left: 17%;
   padding-right: 17%;
@@ -7,26 +6,11 @@
 
 .title {
   text-decoration: none;
-  font-size: 1.7em;
-}
-
-.title:hover {
-  color: darkorange;
 }
 
 @media (max-width: 480px) {
-  .title {
-    font-size: 1em;
-  }
   .container {
     padding-left: 5%;
     padding-right: 5%;
   }
 }
-
-/* @media (max-width: 1300px) {
-  .container {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-} */

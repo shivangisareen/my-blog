@@ -28,7 +28,7 @@ const BlogCard = ({ title, date, summary }) => {
         </Typography>
         <Typography
           variant="h5"
-          align="center"
+          align="left"
           className={cardTitle}
           color="var(--textNormal)"
         >
@@ -38,7 +38,7 @@ const BlogCard = ({ title, date, summary }) => {
         <Typography
           variant="overline"
           color="text.secondary"
-          color="var(--textNormal)"
+          color="var(--textLight)"
         >
           {summary}
         </Typography>
