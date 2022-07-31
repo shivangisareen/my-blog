@@ -1,5 +1,5 @@
 .container {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif !important;
+  font-family: Cambria !important;
   padding-top: 5%;
   padding-left: 17%;
   padding-right: 17%;
@@ -16,7 +16,7 @@
 
 @media (max-width: 480px) {
   .title {
-    font-size: 1.3em;
+    font-size: 1em;
   }
   .container {
     padding-left: 5%;
