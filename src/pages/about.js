@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import NavBar from "../components/NavBar";
-import Header from "../components/header";
+import Header from "../components/Header";
 import Layout from "../components/Layout";
 
 import { text } from "./styling/about.module.css";
