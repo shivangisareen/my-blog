@@ -22,6 +22,8 @@ const IndexPage = () => {
       <p className={intro} style={{ color: "var(--textNormal)" }}>
         hi! I'm a <span className={softwareEngineer}>software engineer</span>{" "}
         living in the UK!
+        <br />
+        {/* Here's my handmade corner on the internet */}
       </p>
       <br />
       <img className={circularSquare} src={me} alt="This is me!" />
