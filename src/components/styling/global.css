@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
 
+::selection {
+  background-color: var(--selectionBackgroundColor);
+}
+
 body {
   --bg: white;
   --textNormal: black;
   --textLight: darkslategrey;
   --blogCardBackground: #f5e4d7;
   --blogCardBackgroundHover: #daa49a;
+  --selectionBackgroundColor: papayawhip;
 
   background-color: var(--bg);
 }
@@ -18,14 +23,5 @@ body.basic_dark {
   --textLight: grey;
   --blogCardBackground: #714955;
   --blogCardBackgroundHover: #550c18;
-}
-
-body.basic_dark {
-  -webkit-font-smoothing: antialiased;
-
-  --bg: #1e1e1d;
-  --textNormal: white;
-  --textLight: grey;
-  --blogCardBackground: #714955;
-  --blogCardBackgroundHover: #550c18;
+  --selectionBackgroundColor: #550c18;
 }
