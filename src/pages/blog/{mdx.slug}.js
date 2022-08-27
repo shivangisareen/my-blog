@@ -64,7 +64,7 @@ const BlogPost = ({ data }) => {
             style={{
               border: 0,
               borderTop: "1px solid",
-              color: "var(--textLight",
+              color: "var(--textLight)",
             }}
           />
           <MDXProvider
@@ -89,7 +89,7 @@ const BlogPost = ({ data }) => {
             style={{
               border: 0,
               borderTop: "1px solid",
-              color: "var(--textLight",
+              color: "var(--textLight)",
             }}
           />
         </p>
