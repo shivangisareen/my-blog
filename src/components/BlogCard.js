@@ -12,9 +12,6 @@ const BlogCard = ({ title, date, summary }) => {
       sx={{
         backgroundColor: "var(--blogCardBackground)",
         height: "auto",
-        // "@media screen and (max-width: 610px)": {
-        //   height: 220,
-        // },
       }}
       className={card}
     >
