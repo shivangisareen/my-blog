@@ -1,6 +1,7 @@
 ---
 title: "Website Features"
 date: "2022-08-28"
+updated: "2022-08-28"
 summary: "3 features to take away"
 ---
 
@@ -13,21 +14,14 @@ if you're starting out to create your own website!
 
 This website uses Gatsby's **data layer** to arrange and view blog posts and uses **GraphiQL** to explore
 the data in the data layer. The blog posts are written in **Markdown**.
-I make use of the following syntax:
-
-```
-<MDXProvider>
-  <MDXRenderer>{data.mdx.body}</MDXRenderer>
-</MDXProvider>
-```
-
-It's not mentioned in the GatsbyJS [tutorial](https://www.gatsbyjs.com/docs/tutorial/), but talked about
-[here](https://www.gatsbyjs.com/docs/how-to/routing/customizing-components/).
 
 With `MDXProvider`, "_you can replace every HTML element that Markdown renders with a custom implementation._"
 
-In the blog posts, you can see the bold text is coloured randomly, the anchor links appear in orange
-instead of the default purple and code blocks (take a look at the one above) have been customized
+It's not mentioned in the GatsbyJS starter [tutorial](https://www.gatsbyjs.com/docs/tutorial/), but talked about
+[here](https://www.gatsbyjs.com/docs/how-to/routing/customizing-components/). There's also a list of components that can be customized.
+
+In the blog posts, you can see the bold text is coloured randomly; the anchor links appear in orange
+instead of the default purple; and code blocks (take a look at the one below) have been customized
 with a grey background colour and a certain padding.
 
 This was possible using the `components` property of `MDXProvider`.
@@ -38,6 +32,8 @@ E.g.-
 <MDXProvider
   components={{
     a: (props) => <a {...props} style={{ color: "orange" }} />,
+    code: (props) => ...,
+    ...
   }}
 >
   <MDXRenderer>...</MDXRenderer>
@@ -61,7 +57,11 @@ didn't look that great.
 With the cards, there's a colour element to it which definitely adds an appeal and chance for customization, and I've also displayed
 the date the blog was posted and a one-liner summary giving more information to the reader at a glance.
 
-The **BlogCard** itself was easy enough to implement using the [Card](https://mui.com/material-ui/react-card/) **MaterialUI** component; what
+The **BlogCard** itself was easy to implement using the [Card](https://mui.com/material-ui/react-card/) **MaterialUI** component; what
 took a while was the styling in a grid layout and making it responsive.
+
+---
+
+Hope this helps and thank you for reading!
 
 The code for my site can be found on [GitHub](https://github.com/shivangisareen/my-blog).
