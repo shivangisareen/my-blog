@@ -17,6 +17,21 @@ import "../../components/styling/global.css";
 
 import Stack from "@mui/material/Stack";
 
+const colors = [
+  "green",
+  "#5EB1BF",
+  "#D84727",
+  "#8B80F9",
+  "#297373",
+  "#C17817",
+  "#A846A0",
+  "#D81E5B",
+];
+
+const getRandomColor = () => {
+  return colors[Math.floor(Math.random() * colors.length)];
+};
+
 const BlogPost = ({ data }) => {
   // if there is an "updated" field in the blog, create a div with that data
   const getDivIfDataExists = () => {
@@ -80,6 +95,9 @@ const BlogPost = ({ data }) => {
                     padding: "2%",
                   }}
                 />
+              ),
+              strong: (props) => (
+                <strong {...props} style={{ color: getRandomColor() }} />
               ),
             }}
           >
