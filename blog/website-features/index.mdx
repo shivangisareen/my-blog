@@ -17,9 +17,8 @@ I make use of the following syntax:
 
 ```
 <MDXProvider>
-      <MDXRenderer>{data.mdx.body}</MDXRenderer>
+  <MDXRenderer>{data.mdx.body}</MDXRenderer>
 </MDXProvider>
-
 ```
 
 It's not mentioned in the GatsbyJS [tutorial](https://www.gatsbyjs.com/docs/tutorial/), but talked about
@@ -37,12 +36,12 @@ E.g.-
 
 ```
 <MDXProvider
-   components={{
-      a: (props) => <a {...props} style={{ color: "orange" }} />,
-   }}>
-      <MDXRenderer>...</MDXRenderer>
+  components={{
+    a: (props) => <a {...props} style={{ color: "orange" }} />,
+  }}
+>
+  <MDXRenderer>...</MDXRenderer>
 </MDXProvider>
-
 ```
 
 2. **DARK MODE TOGGLE**
