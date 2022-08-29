@@ -1,0 +1,68 @@
+---
+title: "Website Features"
+date: "2022-08-28"
+summary: "3 features to take away"
+---
+
+Here are 3 features of this site that have been really fun to implement and might prove to be useful
+if you're starting out to create your own website!
+
+**Note** this website is created using **GatsbyJS** and so some features are unique to it.
+
+1. **CUSTOMIZING MARKDOWN COMPONENTS**
+
+   This website uses Gatsby's **data layer** to arrange and view blog posts and uses **GraphiQL** to explore
+   the data in the data layer. The blog posts are written in **Markdown**.
+   I make use of the following syntax:
+
+   ```
+   <MDXProvider>
+       <MDXRenderer>{data.mdx.body}</MDXRenderer>
+   </MDXProvider>
+   ```
+
+   It's not mentioned in the GatsbyJS [tutorial](https://www.gatsbyjs.com/docs/tutorial/), but talked about
+   [here](https://www.gatsbyjs.com/docs/how-to/routing/customizing-components/).
+
+   With `MDXProvider`, "_you can replace every HTML element that Markdown renders with a custom implementation._"
+
+   In the blog posts, you can see the bold text is coloured randomly, the anchor links appear in orange
+   instead of the default purple and code blocks (take a look at the one above) have been customized
+   with a grey background colour and a certain padding.
+
+   This was possible using the `components` property of `MDXProvider`.
+
+   E.g.-
+
+   ```
+   <MDXProvider
+        components={{
+            a: (props) => <a {...props} style={{ color: "orange" }} />,
+        }}
+    >
+            <MDXRenderer>...</MDXRenderer>
+    </MDXProvider>
+
+   ```
+
+2. **DARK MODE TOGGLE**
+
+   The dark mode toggle (button on top left) implementation is on [Medium](https://medium.com/front-end-weekly/setting-up-dark-mode-on-my-personal-website-300eb28c2c5c)
+   and is also referenced in my blog post ["Setting Up Dark Mode"](https://shivangisareen.com/blog/setting-up-dark-mode).
+
+   Once done with the basic set up, there's really no limit to how you can customize the look of the website in light vs dark mode!
+
+   **Next steps** - add animation to the dark mode toggle.
+
+3. **BLOG CARD**
+
+   Initially I had a blog _list_ instead of displaying cards. This was very limiting, in terms of what I could display (only the title) and
+   didn't look that great.
+
+   With the cards, there's a colour element to it which definitely adds an appeal and chance for customization, and I've also displayed
+   the date the blog was posted and a one-liner summary giving more information to the reader at a glance.
+
+   The **BlogCard** itself was easy enough to implement using the [Card](https://mui.com/material-ui/react-card/) **MaterialUI** component; what
+   took a while was the styling in a grid layout and making it responsive.
+
+The code for my site can be found on [GitHub](https://github.com/shivangisareen/my-blog).
