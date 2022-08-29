@@ -1,6 +1,8 @@
+@import "./global.css";
+
 .header {
   font-family: "Homemade Apple", cursive;
-  color: royalblue;
+  color: var(--textNormal);
   text-decoration: none;
   font-size: 3em;
 }
