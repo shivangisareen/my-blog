@@ -93,6 +93,7 @@ const BlogPost = ({ data }) => {
                     display: "block",
                     padding: "2%",
                     color: "var(--textNormal)",
+                    overflowY: "scroll",
                   }}
                 />
               ),
