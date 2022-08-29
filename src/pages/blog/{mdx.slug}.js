@@ -89,10 +89,10 @@ const BlogPost = ({ data }) => {
                 <code
                   {...props}
                   style={{
-                    backgroundColor: "#F5F5F5",
-                    width: "100%",
+                    backgroundColor: "var(--codeBlockBackgroundColor)",
                     display: "block",
                     padding: "2%",
+                    color: "var(--textNormal)",
                   }}
                 />
               ),

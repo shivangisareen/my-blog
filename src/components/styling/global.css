@@ -11,6 +11,7 @@ body {
   --blogCardBackground: #f5e4d7;
   --blogCardBackgroundHover: #daa49a;
   --selectionBackgroundColor: papayawhip;
+  --codeBlockBackgroundColor: lightgrey;
 
   background-color: var(--bg);
 }
@@ -24,4 +25,5 @@ body.basic_dark {
   --blogCardBackground: #714955;
   --blogCardBackgroundHover: #550c18;
   --selectionBackgroundColor: #714955;
+  --codeBlockBackgroundColor: rgb(49, 48, 48);
 }
