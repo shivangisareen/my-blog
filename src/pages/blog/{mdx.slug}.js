@@ -75,13 +75,6 @@ const BlogPost = ({ data }) => {
           {getDivIfDataExists()}
         </Stack>
         <p className={text} style={{ color: "var(--textNormal)" }}>
-          <hr
-            style={{
-              border: 0,
-              borderTop: "1px solid",
-              color: "var(--textLight)",
-            }}
-          />
           <MDXProvider
             components={{
               a: (props) => <a {...props} style={{ color: "orange" }} />,
@@ -100,17 +93,20 @@ const BlogPost = ({ data }) => {
               strong: (props) => (
                 <strong {...props} style={{ color: getRandomColor() }} />
               ),
+              hr: (props) => (
+                <hr
+                  {...props}
+                  style={{
+                    border: 0,
+                    borderTop: "1px solid",
+                    color: "var(--textLight)",
+                  }}
+                />
+              ),
             }}
           >
             <MDXRenderer>{data.mdx.body}</MDXRenderer>
           </MDXProvider>
-          <hr
-            style={{
-              border: 0,
-              borderTop: "1px solid",
-              color: "var(--textLight)",
-            }}
-          />
         </p>
       </div>
     </Layout>
