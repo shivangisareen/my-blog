@@ -33,17 +33,17 @@ const getRandomColor = () => {
 };
 
 const BlogPost = ({ data }) => {
-  // if there is an "updated" field in the blog, create a div with that data
-  const getDivIfDataExists = () => {
-    if (data.mdx.frontmatter.updated) {
+  // if there is an "updated" or "date" field in the blog, create a div with that data
+  const getDivIfDateExists = (dateData, label) => {
+    if (dateData) {
       return (
         <Stack
           direction="row"
           spacing={1}
           style={{ color: "var(--textLight)" }}
         >
-          <div>Updated: </div>
-          <div className={date}>{data.mdx.frontmatter.updated}</div>
+          <div>{label}: </div>
+          <div className={date}>{dateData}</div>
         </Stack>
       );
     }
@@ -64,15 +64,8 @@ const BlogPost = ({ data }) => {
         </div>
         <br />
         <Stack direction="row" spacing={2}>
-          <Stack
-            direction="row"
-            spacing={1}
-            style={{ color: "var(--textLight)" }}
-          >
-            <div>Posted:</div>
-            <div className={date}>{data.mdx.frontmatter.date}</div>
-          </Stack>
-          {getDivIfDataExists()}
+          {getDivIfDateExists(data.mdx.frontmatter.date, "Posted")}
+          {getDivIfDateExists(data.mdx.frontmatter.updated, "Updated")}
         </Stack>
         <p className={text} style={{ color: "var(--textNormal)" }}>
           <MDXProvider
