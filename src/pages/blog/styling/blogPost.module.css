@@ -1,9 +1,9 @@
 .content {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1.4em;
 }
 
 .title {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-decoration: none;
   font-size: 2em;
   font-weight: bolder;
@@ -17,6 +17,7 @@
 }
 
 .goBack {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-decoration: none;
   color: orange;
   font-size: 1.3em;
