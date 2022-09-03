@@ -16,10 +16,10 @@ const DarkToggle = () => {
                 : toggleTheme("light")
             }
           >
-            {theme === "light" ? (
-              <DarkModeIcon fontSize="large" />
-            ) : (
+            {theme === "basic_dark" ? (
               <WbSunnyIcon fontSize="large" style={{ color: "darkorange" }} />
+            ) : (
+              <DarkModeIcon fontSize="large" />
             )}
           </Button>
         </div>
