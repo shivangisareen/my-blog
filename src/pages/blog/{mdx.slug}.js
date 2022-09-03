@@ -32,23 +32,19 @@ const getRandomColor = () => {
   return colors[Math.floor(Math.random() * colors.length)];
 };
 
-const BlogPost = ({ data }) => {
-  // if there is an "updated" or "date" field in the blog, create a div with that data
-  const getDivIfDateExists = (dateData, label) => {
-    if (dateData) {
-      return (
-        <Stack
-          direction="row"
-          spacing={1}
-          style={{ color: "var(--textLight)" }}
-        >
-          <div>{label}: </div>
-          <div className={date}>{dateData}</div>
-        </Stack>
-      );
-    }
-  };
+// if there is an "updated" or "date" field in the blog, create a div with that data
+const getDivIfDateExists = (dateData, label) => {
+  if (dateData) {
+    return (
+      <Stack direction="row" spacing={1} style={{ color: "var(--textLight)" }}>
+        <div>{label}: </div>
+        <div className={date}>{dateData}</div>
+      </Stack>
+    );
+  }
+};
 
+const BlogPost = ({ data }) => {
   return (
     <Layout>
       <Header />
