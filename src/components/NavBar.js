@@ -26,10 +26,10 @@ const NavBar = () => {
         <Link to="/blog" className={navLink} getProps={isPartiallyActive}>
           blog
         </Link>
-        <Link to="/about" className={navLink} getProps={isActive}>
+        <Link to="/about" className={navLink} getProps={isPartiallyActive}>
           about
         </Link>
-        <Link to="/contact" className={navLink} getProps={isActive}>
+        <Link to="/contact" className={navLink} getProps={isPartiallyActive}>
           contact
         </Link>
       </nav>
