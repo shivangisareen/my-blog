@@ -8,15 +8,15 @@ import {
   current,
 } from "./styling/navBar.module.css";
 
+function isActive({ isCurrent }) {
+  return isCurrent ? { className: current } : null;
+}
+
+function isPartiallyActive({ isPartiallyCurrent }) {
+  return isPartiallyCurrent ? { className: current } : null;
+}
+
 const NavBar = () => {
-  function isActive({ isCurrent }) {
-    return isCurrent ? { className: current } : null;
-  }
-
-  function isPartiallyActive({ isPartiallyCurrent }) {
-    return isPartiallyCurrent ? { className: current } : null;
-  }
-
   return (
     <div className={container}>
       <nav className={navBar}>
