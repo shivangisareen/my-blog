@@ -1,11 +1,12 @@
+import "../components/styling/global.css";
+
 import * as React from "react";
 
-import NavBar from "../components/NavBar";
+import { links, text } from "./styling/contact.module.css";
+
 import Header from "../components/Header";
 import Layout from "../components/Layout";
-
-import { text, links } from "./styling/contact.module.css";
-import "../components/styling/global.css";
+import NavBar from "../components/NavBar";
 
 const ContactPage = () => {
   return (

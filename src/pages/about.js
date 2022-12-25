@@ -1,11 +1,11 @@
+import "../components/styling/global.css";
+
 import * as React from "react";
 
-import NavBar from "../components/NavBar";
 import Header from "../components/Header";
 import Layout from "../components/Layout";
-
+import NavBar from "../components/NavBar";
 import { text } from "./styling/about.module.css";
-import "../components/styling/global.css";
 
 const AboutPage = () => {
   return (

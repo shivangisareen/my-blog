@@ -1,17 +1,20 @@
-import * as React from "react";
-// import 'semantic-ui-css/semantic.min.css';
+import "../components/styling/global.css";
 
-import NavBar from "../components/NavBar";
-import Header from "../components/Header";
-import Layout from "../components/Layout";
-import me from "../images/me.jpeg";
+import * as React from "react";
 
 import {
+  circularSquare,
   intro,
   softwareEngineer,
-  circularSquare,
 } from "./styling/index.module.css";
-import "../components/styling/global.css";
+
+import Header from "../components/Header";
+import Layout from "../components/Layout";
+import NavBar from "../components/NavBar";
+import me from "../images/me.jpeg";
+// import 'semantic-ui-css/semantic.min.css';
+
+
 
 const IndexPage = () => {
   return (

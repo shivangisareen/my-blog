@@ -1,12 +1,13 @@
 import * as React from "react";
-import { Link } from "gatsby";
 
 import {
   container,
+  current,
   navBar,
   navLink,
-  current,
 } from "./styling/navBar.module.css";
+
+import { Link } from "gatsby";
 
 function isActive({ isCurrent }) {
   return isCurrent ? { className: current } : null;
