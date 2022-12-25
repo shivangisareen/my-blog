@@ -1,20 +1,21 @@
-import * as React from "react";
-import { graphql, Link } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx";
-import { MDXProvider } from "@mdx-js/react";
-
-import NavBar from "../../components/NavBar";
-import Header from "../../components/Header";
-import Layout from "../../components/Layout";
-import {
-  content,
-  title,
-  goBack,
-  date,
-  text,
-} from "./styling/blogPost.module.css";
 import "../../components/styling/global.css";
 
+import * as React from "react";
+
+import { Link, graphql } from "gatsby";
+import {
+  content,
+  date,
+  goBack,
+  text,
+  title,
+} from "./styling/blogPost.module.css";
+
+import Header from "../../components/Header";
+import Layout from "../../components/Layout";
+import { MDXProvider } from "@mdx-js/react";
+import { MDXRenderer } from "gatsby-plugin-mdx";
+import NavBar from "../../components/NavBar";
 import Stack from "@mui/material/Stack";
 
 const colors = [

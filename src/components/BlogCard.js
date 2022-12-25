@@ -1,10 +1,12 @@
+import "../components/styling/global.css";
+
 import * as React from "react";
+
+import { card, cardTitle } from "./styling/blogCard.module.css";
+
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-
-import { cardTitle, card } from "./styling/blogCard.module.css";
-import "../components/styling/global.css";
 
 const BlogCard = ({ title, date, summary }) => {
   return (
