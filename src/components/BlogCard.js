@@ -34,11 +34,7 @@ const BlogCard = ({ title, date, summary }) => {
           {title}
         </Typography>
         <br />
-        <Typography
-          variant="overline"
-          color="text.secondary"
-          color="var(--textLight)"
-        >
+        <Typography variant="overline" color="var(--textLight)">
           {summary}
         </Typography>
       </CardContent>
