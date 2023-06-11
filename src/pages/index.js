@@ -12,9 +12,6 @@ import Header from "../components/Header";
 import Layout from "../components/Layout";
 import NavBar from "../components/NavBar";
 import me from "../images/me.jpeg";
-// import 'semantic-ui-css/semantic.min.css';
-
-
 
 const IndexPage = () => {
   return (
