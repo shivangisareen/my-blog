@@ -15,7 +15,7 @@ const AboutPage = () => {
       <br />
       <br />
       <p className={text} style={{ color: "var(--textNormal)" }}>
-        Hello! I'm a software engineer at Apple in the AI/ML team for Siri
+        Hi! I'm a software engineer at Apple in the AI/ML team for Siri
         Understanding.
         <br /> <br />
         Previously, I worked at American Express, in a range of back-end,
@@ -27,8 +27,8 @@ const AboutPage = () => {
         incredible organisations including UNDP, International Telecommunication
         Union (ITU) and Surfrider Foundation Europe.
         <br /> <br />
-        I love creating digital illustrations, reading and writing and listening
-        to podcasts.
+        I love coding, reading books, writing blogs and listening to podcasts.
+        I've recently started learning piano.
         <br /> <br />
         Fun fact: I am one of the co-authors of a case book exploring social
         enterprises in Ireland and Vietnam.
