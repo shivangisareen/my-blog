@@ -23,9 +23,9 @@ const AboutPage = () => {
         Dublin with a bachelors in computer engineering.
         <br /> <br />
         I've taught SQL and Python courses at Code First Girls, to train women
-        in coding skills. I'm a UN Volunteer and have worked with a number of
-        incredible organisations including UNDP, International Telecommunication
-        Union (ITU) and Surfrider Foundation Europe.
+        in coding skills. I'm a UN Volunteer and have volunteered with a number
+        of incredible organisations including UNDP, International
+        Telecommunication Union (ITU) and Surfrider Foundation Europe.
         <br /> <br />
         I love coding, reading books, writing blogs and listening to podcasts.
         I've recently started learning piano.
