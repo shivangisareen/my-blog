@@ -21,12 +21,8 @@ const AboutPage = () => {
         Previously, I worked at American Express, in a range of back-end,
         front-end and devops roles. I graduated in 2019 from Trinity College
         Dublin with a bachelors in computer engineering.
-        <br /> <br />
-        I love coding, reading books, writing blogs and listening to podcasts.
-        I've recently started learning piano.
-        <br /> <br />
-        Fun fact: I am one of the co-authors of a case book exploring social
-        enterprises in Ireland and Vietnam.
+        <br /> <br />I love coding, reading books, writing blogs and listening
+        to podcasts. I've recently started learning piano.
       </p>
     </Layout>
   );
