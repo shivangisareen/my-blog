@@ -13,6 +13,7 @@ import {
 
 import Header from "../../components/Header";
 import Layout from "../../components/Layout";
+import LikeButton from "../../components/LikeButton";
 import { MDXProvider } from "@mdx-js/react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import NavBar from "../../components/NavBar";
@@ -98,6 +99,7 @@ const BlogPost = ({ data }) => {
             <MDXRenderer>{data.mdx.body}</MDXRenderer>
           </MDXProvider>
         </p>
+        <LikeButton postId={data.mdx.frontmatter.title}></LikeButton>
       </div>
     </Layout>
   );
