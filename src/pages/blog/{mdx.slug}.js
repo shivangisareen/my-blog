@@ -62,7 +62,7 @@ const BlogPost = ({ data }) => {
         </div>
         <br />
         <Stack direction="row" spacing={2}>
-          {getDivIfDateExists(data.mdx.frontmatter.date, "Posted")}
+          {getDivIfDateExists(data.mdx.frontmatter.date, "Comitted")}
           {getDivIfDateExists(data.mdx.frontmatter.updated, "Updated")}
         </Stack>
         <p className={text} style={{ color: "var(--textNormal)" }}>
