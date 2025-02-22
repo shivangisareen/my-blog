@@ -27,9 +27,9 @@ const NavBar = () => {
         <Link to="/blog" className={navLink} getProps={isPartiallyActive}>
           blog
         </Link>
-        <Link to="/about" className={navLink} getProps={isPartiallyActive}>
+        {/* <Link to="/about" className={navLink} getProps={isPartiallyActive}>
           about
-        </Link>
+        </Link> */}
         <Link to="/contact" className={navLink} getProps={isPartiallyActive}>
           contact
         </Link>
